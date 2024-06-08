@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Textarea from "./components/Textarea";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="bg-gray-700 ">
+        <div className=" lex flex-col justify-center text-center min-h-screen max-w-screen-2xl p-6 flex">
+          <div className="bg-gray-300 shadow-md rounded p-4">
+            <Textarea />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
